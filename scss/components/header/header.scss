@@ -1,0 +1,25 @@
+.header{
+    background: #FDF4F5;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    &__figure{
+        
+    }
+
+    &__image{
+        width: 6rem;
+        height: 6rem;
+        padding: .5rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: .1rem solid rgba(0, 0, 0, 0.8);
+        background: rgb(0, 255, 94);
+    }
+}

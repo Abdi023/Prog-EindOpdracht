@@ -1,0 +1,23 @@
+@use "../../abstracts/vars.scss";
+
+.main{
+    height: calc(100vh - map-get(vars.$vhCalc, "heightOfHeader") - map-get(vars.$vhCalc, "paddingOfBody"));
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+    .Happiness{
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

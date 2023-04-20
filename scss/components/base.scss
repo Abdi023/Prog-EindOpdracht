@@ -1,0 +1,14 @@
+@use "../abstracts/colors/colors.scss";
+@use "../abstracts/vars.scss";
+@use "../abstracts/fonts/fonts.scss";
+
+body{
+    background: colors.$accent;
+    padding: 3rem;
+    gap: 2rem;
+    font-family: fonts.$font-family;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

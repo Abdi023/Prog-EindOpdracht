@@ -1,0 +1,88 @@
+@use "../../abstracts/colors/colors.scss";
+
+.rightpanel {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+
+
+
+    &__div {
+        min-height: 15rem;
+        max-height: 20rem;
+        width: 100%;
+        max-width: 60rem;
+        position: relative;
+        box-shadow: 0rem 0rem 1rem 0.1rem rgb(172, 11, 226);
+        overflow: hidden;
+        
+    }
+
+    &__detailImage{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__detaildatum{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: colors.$afterTintTextColor;
+        z-index: 2;
+    }
+
+    &__detailtitle{
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: colors.$afterTintTextColor;
+        z-index: 2;
+    }
+
+    &__detailtext{
+        padding-right: 4rem;
+        margin: 2rem;
+        max-height: 15ch;
+        max-width: 70ch;
+        overflow: scroll;
+        overflow-x: hidden;
+        box-shadow: 0rem 0rem 1rem 0.3rem rgb(211, 211, 211);
+        padding: 1.5rem;
+    }
+
+    &__detailbuttonWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 60%;
+    }
+
+    &__audio{
+        cursor: pointer;
+    }
+
+    &__link{
+        color: black;
+        cursor: pointer;
+        background: violet;
+        width: 30%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        justify-content: center;
+        border-radius: .5rem;
+
+        &:hover{
+            transform: scale(1.00009);
+            background: #E5BEEC;
+        }
+    }
+}

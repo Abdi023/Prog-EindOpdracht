@@ -1,0 +1,61 @@
+@use "../../abstracts/./colors/colors.scss";
+
+.leftpanel {
+    width: 50%;
+    height: 100%;
+    
+    position: relative;
+    left: 5rem;
+    right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__ul{
+    height: auto;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: 20rem  20rem;
+    grid-template-rows: 20rem  20rem;
+    list-style: none;
+    gap: 4rem;
+    z-index: 1;
+    }
+
+    &__li {
+        transition-duration: 0.2s;
+        position: relative;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.01);
+        }
+        
+    }
+
+    &__image{
+        height: 100%;
+        width: 100%;
+    }
+
+    &__datum {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        background: none;
+        font-size: 80%;
+        color: colors.$afterTintTextColor;
+        z-index: 2;
+    }
+
+    &__title {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0.5rem;
+        background: none;
+        font-size: 80%;
+        color: colors.$afterTintTextColor;
+        z-index: 2;
+    }
+}
